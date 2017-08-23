@@ -6,18 +6,46 @@
 	<style>
 		div{
 			/*设置光标类型*/
-			background-color: yellowgreen;
+			//background-color: yellowgreen;
 			cursor: pointer;
+			background: url("../Image/pic1.jpg") no-repeat;
+			/*把背景图片拉伸至div尺寸*/
+			height:100px;
+			width: 500px;
+			background-size: cover;
 		}
 
 		span{
+			background: none;
 			background-color: yellow;
 		}
+
+		p{
+			background-color: blue;
+			width: 500px;
+			/*可设置长度,百分比*/
+			text-indent: 10%;
+			color: whitesmoke;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		ul{
+			list-style: none;
+			/**/
+		}
+
 	</style>
 </head>
 <body>
 <!-- 文字类型的属性是可继承的 -->
-<!-- 可继承属性: visibility, cursor, line-height, color, font-family (字体), font-size, font-weight (字体加粗), text-decoration (下划线) -->
+<!-- 内联标签可继承属性: visibility, cursor, line-height, color, font-family (字体), font-size, font-weight (字体加粗), text-decoration (下划线) -->
+<!--块级标签可继承属性: text-indent, text-align-->
+<!--列表标签可继承属性: list-style -->
+<!--不可继承的属性: display, margin, border, padding, background, overflow-->
+
 <!-- 区块控制类的属性是不可继承的,比如说高度和宽度 -->
 	<div>我是div</div>
 	<div>
@@ -26,6 +54,15 @@
 	<span>我是span</span>
 	<!--字体选择 bolder加粗, normal 正常, -->
 	<p style="font-weight: bolder; text-decoration: underline;">我是p标签</p>
+	<a href="google.co.nz">去下划线的超链接</a>
+	<p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+	<ul>
+		<li>列1</li>
+		<li>列2</li>
+		<li>列3</li>
+		<li>列4</li>
+		<li>列5</li>
+	</ul>
 
 </body>
 </html>
