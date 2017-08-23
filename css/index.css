@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+}
+
+body{
+	background: url("../Image/1.jpg");
+}
+
+#head{
+	text-align: right;
+	margin: 0px 0px 30px 0px;
+	background-color: rgba(0,0,0,0.2);
+	line-height: 38px;
+	height: 38px;
+}
+
+#head a{
+	color: black;
+	/*间距*/
+	margin-right: 7px;
+	/*加粗*/
+	font-weight: bold;
+}
+
+#head a.moreProduct{
+	background-color: #3385ff;
+	color: white;
+	/*change to inline-block type*/
+	display: inline-block;
+	width:80px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	/*remove the under line*/
+	text-decoration: none;
+	/*set font*/
+	font-weight: normal;
+}
+
+#content{
+
+}
+
+#content .logo{
+	text-align: center;
+}
+
+#content .logo img{
+	width: 270px;
+	height: 129px;
+}
+
+#content .search{
+	width: 600px;
+	/*块级标签居中*/
+	margin: 0px auto 40px auto;
+}
+
+#content .search input{
+	width: 500px;
+	height: 33px;
+	/*内边距*/
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid gray;
+}
+
+#content .search input:focus{
+	outline: none;
+	border: 1px solid #3385ff;
+}
+
+#content .search a{
+	background-color: #3385ff;
+	color: white;
+	/*change to inline-block type*/
+	display: inline-block;
+	width:100px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	/*remove the under line*/
+	text-decoration: none;
+	/*set font*/
+	font-weight: normal;
+	float: right;
+}
+
+#content .dom{
+	text-align: center;
+}
+
+#content .dom img{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+
+#content .dom img:hover{
+	opacity: 0.7;
+}
+
+#footer{
+	margin-top: 150px;
+	text-align: center;
+}
+
+#footer p{
+	margin-top: 10px;
+}
+
+#footer p a{
+	color: blue;
+}
+
+#footer p.footer-top a{
+	margin:0 5px;
+}
