@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优先级别</title>
+	<style>
+		/*
+		 css中选择器的优先级别
+		 1.相同级别的选择器是就近原则和叠加原则
+		 2.优先级:
+		    id选择器(#id{}) > 类选择器(.test{}) > 标签选择器(div{})
+		 3.选择器的针对性越强,它的优先级别越高
+		 4.优先级别相同,后定义的优先.
+		 5.行内的优先级别只低于important
+		 */
+		*{/*通配符优先级:0*/
+			font-size: 50px;
+		}
+
+		div{/*优先级:1*/
+
+		}
+
+		#test{/*id选择器 优先级:100*/
+
+		}
+
+		div{/*important 的优先级最高*/
+			color: green !important;
+		}
+
+		/*
+		复合选择器的优先级是相加
+		 */
+		div.test{
+			/*
+			优先级别是: 1+10
+			 */
+		}
+
+		div#main{
+			/*
+			优先级别是: 1+100
+			 */
+		}
+
+	</style>
+</head>
+<body>
+
+</body>
+</html>

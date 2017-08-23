@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css可继承的属性</title>
+	<style>
+		div{
+			/*设置光标类型*/
+			background-color: yellowgreen;
+			cursor: pointer;
+		}
+
+		span{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<!-- 文字类型的属性是可继承的 -->
+<!-- 可继承属性: visibility, cursor, line-height, color, font-family (字体), font-size, font-weight (字体加粗), text-decoration (下划线) -->
+<!-- 区块控制类的属性是不可继承的,比如说高度和宽度 -->
+	<div>我是div</div>
+	<div>
+		<span>继承了属性的span</span>
+	</div>
+	<span>我是span</span>
+	<!--字体选择 bolder加粗, normal 正常, -->
+	<p style="font-weight: bolder; text-decoration: underline;">我是p标签</p>
+
+</body>
+</html>

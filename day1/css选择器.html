@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+		/*标签选择器*/
+		div{
+			color: red;
+		}
+
+		p{
+			color: greenyellow;
+		}
+
+		/*
+		类选择器
+		 */
+		.test{
+			color: blue;
+		}
+
+		/*
+		id选择器
+		 */
+		#main{
+			font-size: 40px;
+		}
+
+		/*
+		并列选择器
+		满足其中之一的一个条件即可执行
+		 */
+		div , .test{
+
+		}
+
+		/*
+		复合选择器
+	    要同时满足所有条件才可执行
+		 */
+		div.test{
+			color: red;
+		}
+
+		/*
+		后代选择器
+		div内的p标签才可以执行
+		 */
+		div.test p{
+			color: gold;
+		}
+
+		div.test a{
+			color: deepskyblue;
+		}
+
+		/*
+		直接后代选择器
+		 */
+		div.test > p{
+			color:blueviolet;
+		}
+
+		/*
+		伪类
+		 */
+		input:focus{
+			color: gray;
+			font-size: 50px;
+			outline: none;
+			border: 1px solid red;
+		}
+
+		input:hover{
+			color: gray;
+			font-size: 50px;
+			outline: none;
+			border: 1px solid darkslategrey;
+		}
+
+		#test4:first-letter{
+			font-size: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--标签选择器 -->
+	<div>1111111</div>
+	<p>22222222222</p>
+
+	<!-- 类选择器 -->
+	<p class="test">类选择器</p>
+
+	<!-- id选择器 -->
+	<p id="main">id选择器</p>
+
+	<!-- 后代选择器和直接后代选择器 -->
+	<div class="test">后代选择
+		<p>直接后代选择器里的p</p>
+		<div>
+			<p id="test4">后代选择器里的p</p>
+		</div>
+		<a href="google.co.nz">Google</a>
+	</div>
+
+	<input type="text" value="我是input">
+
+
+</body>
+</html>

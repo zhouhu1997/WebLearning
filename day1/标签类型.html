@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html5的标签类型</title>
+	<style>
+		div{
+			background-color: deepskyblue;
+			width: 200px;
+			height: 300px;
+		}
+
+		a{
+			background-color: red;
+		}
+
+		spa{
+			background-color: yellow;
+		}
+
+		input{
+			width:500px;
+			height:50px;
+		}
+
+		button{
+			width:250px;
+			height:50px;
+		}
+	</style>
+</head>
+<body>
+<!-- 块级标签 默认是独占一行的,可以用width and height来更改高度和宽度-->
+<!-- css中的display属性 4个属性: none 隐藏标签; block 让标签变成块级标签; inline 让块级标签变成行内标签;
+     inline-block 让标签变成行内块级标签-->
+	<div>我是块级标签</div>
+	<div style = "display: inline">块级转行内</div>
+	<br>
+<!-- 行内标签 多个标签能显示在一行,但是高度和宽度取决于内容的尺寸 比如说 span,a,label-->
+	<spa>span,行内标签</spa>
+	<spa>span2,行内标签</spa>
+<br>
+	<!--行内标签变成块级标签  -->
+	<spa style="display: block";>行内标签变块级标签</spa>
+	<a href="google.co.nz">行内标签</a>
+<br>
+
+<!-- 行内块级标签 -->
+	<input placeholder="我是输入框">
+	<button>
+		I am button
+	</button>
+
+</body>
+</html>
