@@ -1,0 +1,161 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #F2F2F2;
+	text-align: center;
+}
+
+/*panel*/
+#panel{
+	margin-top: 150px;
+	display: inline-block;
+	width: 250px;
+	height: 300px;
+	background-color: white;
+	border: 1px solid #ddd;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 0 2px #999;
+}
+
+/*Panel top*/
+#panel .panel-top{
+	font-size: 15px;
+	font-family: Arial;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	width: 200px;
+	margin: 0 auto;
+}
+
+/*Panel content*/
+#panel .panel-content{
+	margin-top: 20px;
+}
+
+/*Panel username and password*/
+#panel .panel-content .input{
+	margin-bottom: 9px;
+	height: 36px;
+	position: relative;
+
+}
+
+/*Panel image*/
+#panel .panel-content .input img{
+	width: 20px;
+	height: 20px;
+}
+
+#panel .panel-content label{
+	position: absolute;
+	top: 7px;
+	left: 6px;
+}
+
+#panel .panel-content .input input{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ddd;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+
+#panel .panel-content .input input:focus{
+	outline: none;
+	border: 1px solid orange;
+	box-shadow: 0  0 2px orange;
+}
+
+/*Register and forgot password*/
+
+#panel .panel-content .autoLogin{
+	width: 260px;
+	height: 30px;
+	line-height: 30px;
+}
+
+#panel .panel-content .autoLogin input{
+	border: none;
+	width: 20px;
+	height: 30px;
+	float: left;
+}
+
+
+#panel .panel-content .autoLogin a{
+	/*display: inline-block;*/
+	color: gray;
+	text-decoration: none;
+	font-size: 13px;
+
+}
+
+
+#panel .panel-content .autoLogin .forgotPwd{
+	float: right;
+}
+
+#panel .panel-content .autoLogin .auto{
+	float: left;
+}
+
+/*button*/
+#panel .panel-content .button{
+	height: 30px;
+}
+
+#panel .panel-content button{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	color:white;
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	background-color: orange;
+}
+
+#panel .panel-content button:focus{
+	outline: none;
+}
+
+
+/*footer panel*/
+#panel .register{
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	text-align: center;
+	margin: 10px auto;
+	border-bottom: 1px solid #ddd;
+	width: 200px;
+}
+
+#panel .register a{
+	color: orange;
+	text-decoration: none;
+	margin-left: 4px;
+	border: none;
+}
+
+#panel .panel-footer{
+	height: 30px;
+	line-height: 30px;
+}
+
+#panel .panel-footer img{
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	vertical-align: middle;
+}
+
+#panel .panel-footer span{
+	display: inline-block;
+	line-height: 30px;
+}

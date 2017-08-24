@@ -5,7 +5,7 @@
 }
 
 body{
-	background: url("../Image/1.jpg");
+	/*background: url("../Image/1.jpg");*/
 }
 
 #head{
@@ -45,11 +45,13 @@ body{
 
 #content .logo{
 	text-align: center;
+
 }
 
 #content .logo img{
 	width: 270px;
 	height: 129px;
+
 }
 
 #content .search{
