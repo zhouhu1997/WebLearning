@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Window&&Document</title>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		//Window
+		//1.所有的全局变量都是window的属性
+		var age =18;
+		console.log(window.age);
+
+		//2.所有全局的函数都是window的函数
+		function dog() {
+			console.log(window.age);
+		}
+		window.dog();
+
+		//动态跳转
+		//location.href = 'http://baidu.com';
+
+		/*
+		* Documents -
+		* 1.用于动态获取当前网页中的任意一个标签
+		* 2.对获取到的标签进行操作*/
+//		document.write('hello world');
+//		document.write('<input type="date">');
+//		//document.write('<img src="../Image/1.jpg">');
+//
+//		function change() {
+//			//var img = document.getElementByClassName('icon')[0];
+//			var img = document.getElementById('icon');
+//			img.src = '../Image/wp_1.jpg';
+//		}
+
+	</script>
+</head>
+<body>
+<!--<img id="icon" src="../Image/wp_1.jpg" alt="">-->
+<p></p>
+<button onclick="change()">Change</button>
+
+<input type="text" id="input">
+
+<script type="text/javascript">
+	//document.write('<img src="../Image/1.jpg">');
+	//var img = document.getElementByClassName('icon')[0];
+	var img = document.getElementById('icon');
+	function change() {
+		//if found. return any positive number else return -1;
+		if (img.src.lastIndexOf('wp_1.jpg') != -1) {
+			console.log('2');
+			img.src = '../Image/wp_2.jpg';
+		} else {
+			img.src = '../Image/wp_1.jpg';
+			console.log('1');
+		}
+
+	}
+
+	var img = document.getElementById('icon');
+	img.onmousedown = function () {
+		img.src = '../Image/wp_3.jpg';
+	}
+
+	window.onload = function () {
+		console.log('加载完毕');
+		alert('haha');
+	}
+
+	var input = document.getElementById('input');
+	input.onfocus = function () {
+		input.width = '700px';
+		input.height = '100px';
+		//cs中的属性要用style调用
+		input.style.outline = 'none';
+		input.style.fontSize = '30px';
+	}
+
+</script>
+</body>
+</html>
