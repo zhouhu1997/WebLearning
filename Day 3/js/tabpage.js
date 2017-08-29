@@ -17,7 +17,7 @@ window.onload = function () {
 		li.id = i;
 		console.log(li);
 		li.onmousedown = function () {
-			console.log(li);
+			console.log(li.onmousedown());
 			//Clean the data
 			for(var j=0; j<titles.length; j++){
 				titles[j].className = '';

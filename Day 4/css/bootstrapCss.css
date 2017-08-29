@@ -1,0 +1,56 @@
+body{
+	padding-top: 50px;
+}
+
+#wrapper img{
+	height: 400px;
+	width: 1080px;
+}
+
+#wrapper a{
+	display: inline-block;
+}
+
+#main {
+	padding-top: 50px;
+}
+
+#main .container-fluid{
+	text-align: center;
+}
+
+#details img{
+	height: 140px;
+	width:140px;
+}
+
+#details div{
+	padding-top: 10px;
+}
+
+#footer {
+	margin-top: 50px;
+}
+
+#footer .container-fluid .row img{
+	height: 400px;
+	width: 400px;
+}
+
+#footer .container-fluid .row p{
+	text-align: left;
+	text-indent: 8%;
+}
+
+#footer .tab-content p{
+	text-align: left;
+}
+
+#footer .tab-content .container-fluid .row .col-md-8{
+	margin-top: 20px;
+}
+
+#goTop{
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
